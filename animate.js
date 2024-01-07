@@ -1,17 +1,15 @@
-// Создаем новый экземпляр Intersection Observer
-var observer = new IntersectionObserver(function(entries, observer) {
+const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(function(entry) {
-    if (entry.isIntersecting) { // Проверяем, если элемент появился в видимой области
-      entry.target.classList.add('appeared'); // Добавляем класс "visible" к элементу
-      observer.unobserve(entry.target); // Прекращаем отслеживать этот элемент, после того как он появился
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appeared');
+      observer.unobserve(entry.target); 
     }
   });
-}, { threshold: 0.5 }); // Порог 0.5 означает, что элемент считается видимым, когда он занимает хотя бы половину видимой области
+}, { threshold: 0.5 }); 
 
-// Находим элемент, который мы хотим отслеживать
+
 const nameSection = document.querySelector('.name'), 
-aboutSection = document.querySelector('.about')
+  aboutSection = document.querySelector('.about')
   
-// Начинаем отслеживать этот элемент
 observer.observe(nameSection);
 observer.observe(aboutSection);
