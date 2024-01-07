@@ -1,0 +1,53 @@
+.contacts {
+    margin-bottom: 24px;
+}
+
+.contacts__title {
+    color: #4A3036;
+    font-family: Prata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 32px;
+}
+
+.contacts__container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contacts__container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contacts__container-left h3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    display: block;
+    max-width: 556px;
+}
+
+.contacts__container-left-link {
+    display: flex;
+    gap: 64px;
+    color: #4A3036;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.contacts__container-right img {
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 40px;
+}

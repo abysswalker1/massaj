@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/transitions.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/burger.css">
+    <link rel="stylesheet" href="style/name.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/qualification.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/contacts.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Prata&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <div class="header-burger">
+                    
+                </div>
+                <nav class="header__navigation">
+                    <a class="std-link" href="#about">Обо мне</a>
+                    <a class="std-link" href="#qualification">Квалификация</a>
+                    <a class="std-link" href="#services">Услуги</a>
+                    <a class="std-link" href="#contacts">Контакты</a>
+                </nav>
+            </div>
+        </div>
+        <button class="header__container-menu">
+            <img onclick="openBurger()" src="image/srtipes.svg" alt="">
+        </button>
+        <div id="burger" class="burger">
+            <div class="container">
+                
+                <button onclick="closeBurger()">
+                    <img  class="burger__close" src="image/close.svg" alt="">
+                </button>
+
+                <nav class="burger__navigation">
+                    <a href="#about">Обо мне</a>
+                    <a href="#qualification">Квалификация</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+            </div>
+        </div>
+
+        <section class="name">
+            <div class="container">
+                <div class="name__container">
+                    <div class="name__container-left">
+                        <h3 class="name__container-left-title hidden hidden-left delay-1 ">Психолог-консультант</h3>
+                        <h1 class="name__container-left-name hidden hidden-left delay-2">Белова Мария</h1>
+                        <p class="name__container-left-description hidden hidden-left delay-3">Каждый человек способен изменить себя и свою жизнь в лучшую сторону, и я помогу вам в этом.</p>
+                    </div>
+                    <div class="name__container-right">
+                        <img src="image/main.png" class="hidden hidden-right delay-2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title">Обо мне</h2>
+                <div class="about__container">
+                    <div class="about__container-left">
+                        <img src="image/about.png" class="hidden delay-1" alt="">
+                    </div>
+                    <div class="about__container-right">
+                        <span>В 2012 году окончила факультет психологии МГУ.</span>
+                        <span>Общий стаж работы составляет 8 лет.</span>
+                        <span>Моя деятельность как психолога-консультанта основана на индивидуальном подходе к каждому клиенту.</span>
+                        <span>Я помогаю людям разрешить конфликты, справиться
+                            с тревогой и стрессом, повысить самооценку, улучшить отношения с другими, решить семейные проблемы и многое другое.</span>
+                        <span>В моей работе я использую различные методики
+                            и техники, такие как когнитивно-поведенческая терапия, глубинная психология, тренинги по развитию навыков коммуникации и расслабления. Я также провожу индивидуальные и групповые сеансы, помогая клиентам искать внутренние ресурсы и находить новые способы преодоления проблем.</span>
+                    </div>
+                    <div class="about__overlay hidden delay-2"></div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="qualification" id="qualification">
+            <div class="container">
+                <h2 class="qualification__container-title">Квалификация</h2>
+                <div class="qualification__container">
+                    <h3 class="qualification__container-description">Вы можете ознакомиться с моими сертификатами.</h3>
+                    <div class="qualification__container-grid">
+                        <img src="image/sertifikat1.png" class="qualification__card" alt="">
+                        <img src="image/sertifikat2.png" class="qualification__card" alt="">
+                        <img src="image/sertifikat3.png" class="qualification__card" alt="">
+                        <img src="image/sertifikat4.png" class="qualification__card" alt="">
+                        <img src="image/sertifikat5.png" class="qualification__card" alt="">
+                        <img src="image/sertifikat6.png" class="qualification__card" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__container">
+                    <div class="services__container-left">
+                        <h3 class="services__container-left-title">Консультации</h3>
+                        <span>Индивидуальные консультации</span>
+                        <span>Семейные консультации</span>
+                        <span>Групповые консультации</span>
+                        <button class="button-primary">Подробнее</button>
+                    </div>
+                    <div class="services__container-right">
+                        <h3 class="services__container-left-title">Тренинги</h3>
+                        <span>По управлению стрессом и эмоциональным состоянием</span>
+                        <span>По повышению самооценки</span>
+                        <span>По развитию лидерских навыков</span>
+                        <button class="button-primary">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__container">
+                    <div class="contacts__container-left">
+                        <h3>Если вы сталкиваетесь с трудностями, ищете понимание и готовы начать работу над собой, я рада предложить свою помощь.</h3>
+                        <h3>Свяжитесь со мной, и вместе мы найдём решение вашей проблемы.</h3>
+                        <div class="contacts__container-left-link">
+                            <a class="std-link" href="tel:77731274750">+7(773)127-47-50</a>
+                            <a class="std-link" href="email:belovam@gmailcom">belova_m@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contacts__container-right">
+                        <img src="image/andrey-zvyagintsev-9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="form">
+            <div class="container">
+                <div class="form__container">
+                    <form class="form__action" action="">
+                        <span>Фамилия Имя</span>
+                        <input type="text" placeholder="">
+                        <span>Эл. почта</span>
+                        <input type="email" placeholder="">
+                        <span>Телефон</span>
+                        <input type="tel" placeholder="">
+                        <!-- <input type="submit" value="" /> -->
+                        <button class="form__action-btn button-primary" type="submit">Записаться на консультацию</button>
+                      </form>
+                </div>
+            </div>
+        </section>
+    
+        <div class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__container-left">
+                        <nav class="footer__navigation">
+                            <a class="std-link" href="#about">Обо мне</a>
+                            <a class="std-link" href="#qualification">Квалификация</a>
+                            <a class="std-link" href="#services">Услуги</a>
+                            <a class="std-link" href="#contacts">Контакты</a>
+                        </nav>
+                    </div>
+                    <div class="footer__container-right">
+                        <a class="std-link" href="tel:77731274750">+7(773)127-47-50</a>
+                        <a class="std-link" href="email:belovam@gmailcom">belova_m@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="animate.js"></script>
+</body>
+</html>

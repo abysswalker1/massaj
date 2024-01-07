@@ -1,0 +1,27 @@
+.hidden {
+  opacity: 0;
+  transition: 700ms ease-out;
+}
+
+.hidden-left {
+  translate: -30px;
+}
+
+.hidden-right {
+  translate: 10px;
+}
+
+.delay-1 {
+  transition-delay: 100ms;
+}
+.delay-2 {
+  transition-delay: 200ms;
+}
+.delay-3 {
+  transition-delay: 300ms;
+}
+
+.appeared .hidden, .appeared .hidden-right {
+  opacity: 1;
+  translate: 0;
+}
