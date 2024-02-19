@@ -1,4 +1,6 @@
-
+.name {
+    padding: 80px 0;
+}
 .name__container {
     display: flex;
     flex-wrap: wrap;
